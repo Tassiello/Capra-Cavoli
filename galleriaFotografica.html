@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Galleria Immagini</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Capre&Cavoli Galleria Immagini">
+    <meta name="keywords" content="bed e breakfast, capre e cavoli, galleria immagini, fotografie">
+    <meta name="author" content="BitCamp Guppo 3">
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Capre&Cavoli</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: Glory, sans-serif;
+            height: 100vh;
+            background: url(img/background.avif) fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            text-align: center;
+            background-color: rgba(81, 204, 54, 0.5);
+            color: rgb(218, 148, 8);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        header h1, h3 {
+            text-align: center;
+            margin-right: 13%;
+        }
+
+
+        #logo {
+            float: left;
+            height: 10vh;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: rgba(81, 204, 54, 0.6);
+            text-align: center;
+            border-radius: 8px;
+            padding: 18px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: rgb(171, 122, 22);
+            text-decoration: none;
+            padding: 12px;
+        }
+
+        nav a:hover {
+            background-color: rgb(128, 128, 128, 0.4);
+            border-radius: 40px;
+            margin: 3px;
+        }
+
+        #description {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #goat {
+            float: left;
+            width: 15%;
+            border-radius: 25px;
+        }
+
+        #main {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        table {
+            background-color: rgb(255, 255, 255, 0.4);
+            border-radius: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer {
+            background-color: rgba(81, 204, 54, 0.4);
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        /*Animazione scroll*/
+
+        .container {
+            padding: 2rem;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .slider {
+            display: flex;
+            aspect-ratio: 16 / 9;
+            overflow-x: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+            border-radius: 0.5rem;
+        }
+
+        .slider img {
+            flex: 1 0 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+        }
+
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .slider-nav a {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: background-color ease 250ms;
+        }
+
+        .slider-nav a:hover {
+            background-color: #555;
+        }
+
+        #imgtext1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <img src="img/logo.png" id="logo" alt="logo" />
+        <h1>Capra & Cavoli</h1>
+        <h3>Bed & Breakfast</h3>
+    </header>
+
+    <!--Navbar-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="camereServizi.html">Camere & Servizi</a>
+        <a href="galleriaFotografica.html">Galleria Immagini</a>
+        <a href="contattiSocial.html">Contatti & Social</a>
+        <a href="prenotazioni.html">Prenotazioni</a>
+        <a href="localitàAttrazioni.html">Località & Attrazioni</a>
+        <a href="eventi.html">Blog & Eventi</a>
+        <a href="nostraStoria.html">La Nostra Storia</a>
+        <a href="autori.html">Autori</a>
+    </nav>
+
+    <section id="main">
+        <!--Slider 1-->
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="s1" src="img/single.avif" alt="supersuite" />
+                    <img id="s2" src="img/matrimonialeDeluxe.avif" alt="matrimoniale deluxe" />
+                    <img id="s3" src="img/matrimoniale.avif" alt="camera matrimoniale" />
+                    <img id="s4" src="img/mountain.avif" alt="appartamento" />
+                </div>
+                <div class="slider-nav">
+                    <a href="#s1"></a>
+                    <a href="#s2"></a>
+                    <a href="#s3"></a>
+                    <a href="#s4"></a>
+                </div>
+            </div>
+
+            <p id="imgtext1">
+                Le camere del <em>"Capra&Cavoli"</em> sono rifugi accoglienti immersi nella bellezza naturale delle montagne molisane.<br />
+                Arredate con gusto rustico ed elegante, ogni camera offre un ambiente confortevole e rilassante <br />
+                per rigenerarsi dopo una giornata di esplorazione.
+                Dotate di letti morbidi e accoglienti, arredi tradizionali e tocchi di charme locale,<br />
+                le camere del nostro bed and breakfast sono pensate per offrire il massimo comfort e <strong>un'esperienza autentica.</strong> <br />
+                Ogni camera è un'oasi di tranquillità, dove gli ospiti possono ritirarsi e godersi momenti di pace e serenità, circondati dalla bellezza mozzafiato del paesaggio circostante.
+            </p>
+        </section>
+
+
+        <!--Slider 2-->
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="s5" src="img/mount1.avif" alt="Vista montagna" />
+                    <img id="s6" src="img/mount2.avif" alt="Campo con tramonto" />
+                    <img id="s7" src="img/mount3.avif" alt="Mucche al pascolo" />
+                </div>
+                <div class="slider-nav">
+                    <a href="#s5"></a>
+                    <a href="#s6"></a>
+                    <a href="#s7"></a>
+                </div>
+            </div>
+
+            <p id="imgtext1">
+                I paesaggi intorno al <em>"Capra&Cavoli"</em> sono un'incantevole fusione di <strong>maestosità naturale e serenità rurale.</strong> <br />
+                Avvolti dalle montagne dell'Appennino, i dintorni di Capracotta offrono uno spettacolo mozzafiato a ogni angolo.<br /><br />
+
+                Le verdi vallate si estendono sotto i possenti picchi delle montagne, creando un panorama che incanta gli occhi e ristora lo spirito. <br />
+                Boschi di faggi e querce punteggiano il territorio, offrendo rifugio a una ricca varietà di flora e fauna.<br /><br />
+
+                In primavera, i prati si dipingono di colori vivaci grazie ai fiori selvatici che sbocciano tra l'erba verde brillante, <br />
+                mentre in autunno le foglie degli alberi assumono sfumature calde e accoglienti, creando uno spettacolo cromatico indimenticabile.<br /><br />
+
+                Le sponde dei laghi e dei ruscelli cristallini offrono luoghi di pace e riflessione, dove gli ospiti possono immergersi nella <br />
+                quiete della natura e <em>lasciarsi cullare dal dolce suono dell'acqua che scorre.</em><br /><br />
+
+                I sentieri escursionistici che si snodano tra i boschi e le montagne invitano a esplorare la regione e a scoprire panorami <br />
+                sempre nuovi e sorprendenti. Che si tratti di una passeggiata tranquilla o di un'escursione più impegnativa, <br />
+                i paesaggi intorno al <em>"Capra&Cavoli"</em> sono pronti a regalare emozioni autentiche e indimenticabili a ogni passo.
+
+            </p>
+        </section>
+    </section>
+    <!--Copyright-->
+    <footer>
+        &copy; 2024, Gruppo 3 Bitcamp. Tutti i diritti riservati.
+    </footer>
+
+</body>
+</html>

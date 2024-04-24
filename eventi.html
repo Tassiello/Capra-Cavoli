@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Capre&Cavoli Bed&Breakfast">
+    <meta name="keywords" content="bed e breakfast, capre e cavoli, eventi, newsletter, promozioni">
+    <meta name="author" content="BitCamp Guppo 3">
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Capre&Cavoli</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Glory, sans-serif;
+            height: 100vh;
+            background: url(img/background.avif) fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            text-align: center;
+            background-color: rgba(81, 204, 54, 0.5);
+            color: rgb(218, 148, 8);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+            header h1, h3 {
+                text-align: center;
+                margin-right: 13%;
+            }
+
+
+        #logo {
+            float: left;
+            height: 10vh;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: rgba(81, 204, 54, 0.6);
+            text-align: center;
+            border-radius: 8px;
+            padding: 18px;
+            font-weight: bold;
+        }
+
+        nav a {
+                color: rgb(171, 122, 22);
+                text-decoration: none;
+                padding: 12px;
+        }
+
+        nav a:hover {
+                    background-color: rgb(128, 128, 128, 0.4);
+                    border-radius: 40px;
+                    margin: 3px;
+        }
+        #inizio {
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            text-align:center;
+        }
+        #inizio ul{
+            list-style:none;
+        }
+        #eventi {
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            text-align: center;
+            padding: 0;
+        }
+        #eventi table{
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #promozioni{
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius:10px;
+            text-align:center;
+            
+        }
+            #promozioni a {
+                text-decoration: none;
+                color: rgb(0 , 0 ,0 , 1);
+
+            }
+                #promozioni a:hover {
+                    
+                    color: rgb(218, 148, 8);
+                    
+                }
+
+            #promozioni img {
+                width: 25%;
+                object-fit: cover;
+            }
+            #promozioni img:hover {
+                animation: 2s blinker linear infinite;
+            }
+        #newsletter{
+            background-color:rgba(255, 255, 255, 0.6);
+            border-radius:10px;
+            text-align:center;
+            
+        }
+        #newsletter form{
+            padding:10px;
+            
+        }
+        @keyframes blinker {
+            0% {
+                opacity: 1.0;
+            }
+
+            25% {
+                opacity: 0.8;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            75% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+       
+        footer {
+            background-color: rgba(81, 204, 54, 0.4);
+            
+            text-align: center;
+            margin-top: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <img src="img/logo.png" id="logo" alt="logo" />
+        <h1>Capra & Cavoli</h1>
+        <h3>Bed & Breakfast</h3>
+    </header>
+
+    <!--Navbar-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="camereServizi.html">Camere & Servizi</a>
+        <a href="galleriaFotografica.html">Galleria Immagini</a>
+        <a href="contattiSocial.html">Contatti & Social</a>
+        <a href="prenotazioni.html">Prenotazioni</a>
+        <a href="localitàAttrazioni.html">Località & Attrazioni</a>
+        <a href="eventi.html">Blog & Eventi</a>
+        <a href="nostraStoria.html">La Nostra Storia</a>
+        <a href="autori.html">Autori</a>
+    </nav>
+
+    <!--sezione intro-->
+    <div id="inizio">
+        <p>Il nostro B&B offre tantissimi eventi e si suddividono in: </p>
+        <ul>
+            <li>Eventi Invernali</li>
+            <li>Eventi Estivi</li>
+        </ul>
+    </div>
+    <!--sezione eventi del B&B-->
+    <div id="eventi">
+        <table>
+            <tr>
+                <th>Eventi Invernali</th>
+                <th>Eventi Estivi</th>
+            </tr>
+            <tr>
+                <td>Escursioni Invernali</td>
+                <td>Escursioni Estive</td>
+            </tr>
+            <tr>
+                <td>Sci Alpinistico</td>
+                <td>Escursionismo Mountain Bike</td>
+            </tr>
+            <tr>
+                <td>Sci Di Fondo</td>
+                <td>Tiro con l'arco</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!--sezione promozioni del mese-->
+    <div id="promozioni">
+        <h2>PROMOZIONE DEL MESE</h2>
+        <a href="galleriaFotografica.html">
+            <img src="img/supersuite.avif" alt="questa è un'immagine" />
+        </a>
+        <p>Suite Familiare a soli €Z / settimana </p>
+        <a href="prenotazioni.html">
+            <p>PRENOTA ORA</p>
+        </a>
+    </div>
+
+    <!--newsletter-->
+    <div id="newsletter">
+        <p>Vuoi rimanere aggiornato sui eventi futuri?</p>
+
+        <form>
+            <label for="email">Iscriviti alla Newsletter</label>
+            <br />
+            <input type="email" id="email" name="email" placeholder="info@capraecavoli.com" required />
+
+            <button type="submit">Invia</button>
+        </form>
+
+    </div>
+
+    <!--Copyright-->
+    <footer>
+        &copy; 2024, Gruppo 3 Bitcamp. Tutti i diritti riservati.
+    </footer>
+
+
+
+
+
+</body>
+</html>
